@@ -41,16 +41,14 @@ main{position:relative;z-index:2}
 .signature{margin-top:50px;padding-top:25px;border-top:1px solid var(--line);display:flex;flex-direction:column;align-items:flex-end;font-family:"Cormorant Garamond",serif}
 .signature span{font-size:1.1rem;color:var(--muted)}
 .signature strong{font-size:2rem;font-style:italic;font-weight:500;color:var(--rose)}
-.memories{padding:90px 20px 150px;max-width:1100px;margin:auto}
-.section-heading{display:flex;align-items:center;gap:18px;justify-content:center;margin-bottom:45px}
-.section-heading p{margin:0}
-.line{height:1px;width:65px;background:var(--line)}
-.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.photo-placeholder{width:100%;max-width:300px;margin:0 auto}
-.placeholder-inner{border:1px solid var(--line);background:linear-gradient(145deg,rgba(94,39,62,.42),rgba(19,10,18,.75));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.placeholder-inner:before{content:"";position:absolute;inset:12px;border:1px solid rgba(245,213,223,.1);z-index:2;pointer-events:none}
-.placeholder-inner img{width:100%;height:auto;max-height:420px;display:block;object-fit:contain;object-position:center}
-figcaption{font-family:"Cormorant Garamond",serif;color:var(--muted);font-size:1rem;margin-top:10px;text-align:center}
+.love-notes{padding:90px 20px 150px;max-width:1100px;margin:auto}
+.note-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.love-note{min-height:300px;padding:34px 28px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(94,39,62,.34),rgba(19,10,18,.78));position:relative;overflow:hidden;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 20px 55px rgba(0,0,0,.22)}
+.love-note:before{content:"";position:absolute;inset:11px;border:1px solid rgba(245,213,223,.08);pointer-events:none}
+.note-heart{font-family:"Cormorant Garamond",serif;font-size:2.5rem;color:var(--rose);margin-bottom:8px}
+.love-note>span{font-size:.58rem;letter-spacing:.22em;color:var(--muted);margin-bottom:10px}
+.love-note h3{font-family:"Cormorant Garamond",serif;font-size:2rem;font-weight:500;color:var(--rose-soft);margin:0 0 12px}
+.love-note p{font-family:"Cormorant Garamond",serif;font-size:1.12rem;line-height:1.55;color:#eadde2;max-width:260px;margin:0}
 .ending{min-height:85svh;display:grid;place-items:center;text-align:center;padding:100px 24px;background:radial-gradient(circle at 50% 55%,rgba(130,43,77,.18),transparent 50%)}
 .ending-inner{max-width:800px}
 .ending h2{font-family:"Cormorant Garamond",serif;font-size:clamp(3rem,9vw,6.5rem);font-weight:500;line-height:.95;margin:25px 0}
@@ -64,10 +62,8 @@ figcaption{font-family:"Cormorant Garamond",serif;color:var(--muted);font-size:1
 .reveal.visible{opacity:1;transform:none}
 .delay-1{transition-delay:.14s}.delay-2{transition-delay:.28s}.delay-3{transition-delay:.42s}
 @media(max-width:700px){
-  .photo-grid{grid-template-columns:1fr;max-width:320px;margin:auto}
-  .photo-placeholder{width:100%;max-width:320px}
-  .placeholder-inner img{max-height:360px}
-  .photo-placeholder:nth-child(2){transform:none}
+  .note-grid{grid-template-columns:1fr;max-width:360px;margin:auto}
+  .love-note{min-height:270px}
   .letter-card{padding:38px 25px}
   .letter-section{padding-top:75px}
 }
