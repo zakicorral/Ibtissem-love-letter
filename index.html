@@ -1,1 +1,94 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0; url=project/"><script>location.replace("project/"+location.search+location.hash)</script><title>For Ibtissem ♡</title></head><body></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#180d18">
+  <meta name="description" content="A little love letter, made especially for Ibtissem.">
+  <title>For Ibtissem ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Play music" aria-pressed="false">
+    <span class="music-icon">♪</span><span id="musicLabel">Music</span>
+  </button>
+  <audio id="music" loop preload="metadata">
+    <source src="audio/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <p class="eyebrow reveal">A little something for you</p>
+      <h1 class="reveal delay-1">For <span>Ibtissem</span></h1>
+      <p class="hero-sub reveal delay-2">Some things are easier to feel than to say.</p>
+      <a class="scroll-cue reveal delay-3" href="#letter" aria-label="Scroll to the letter">
+        <span>read this slowly</span><span class="arrow">↓</span>
+      </a>
+    </section>
+
+    <section class="letter-section" id="letter">
+      <div class="letter-card reveal">
+        <div class="ornament">♡</div>
+        <p class="small-date">For the girl who means more than these words can hold</p>
+
+        <div class="letter">
+          <p>My love,</p>
+          <p>I wanted to make you something instead of simply sending you another message. Something you could open whenever you wanted and remember that, somewhere in this world, there is someone who chose to put his feelings into every little detail just for you.</p>
+          <p>There are so many moments with you that I could write about. The funny ones. The stupid ones. The quiet ones. The moments where we said almost nothing and somehow it still felt like enough.</p>
+          <p>What I love most is not one perfect moment. It is <em>us</em> — all the little pieces that became something I never want to take for granted.</p>
+          <p>Thank you for being part of my life, for the memories we have already made, and for all the ones we have not lived yet.</p>
+          <p>If I could give you one thing through this screen, it would be the feeling behind these words: <strong>you are deeply loved.</strong></p>
+          <p>So keep this little corner of the internet. Come back to it on a good day, a bad day, or one of those ordinary days when you just need a reminder.</p>
+          <p class="closing">I love you, Ibtissem.<br>More than a page could ever explain.</p>
+        </div>
+
+        <div class="signature">
+          <span>Always yours,</span>
+          <strong>Zaki</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="memories" id="memories">
+      <div class="section-heading reveal">
+        <span class="line"></span>
+        <p>little pieces of us</p>
+        <span class="line"></span>
+      </div>
+
+      <div class="photo-grid">
+        <figure class="photo-placeholder reveal">
+          <div class="placeholder-inner"><span>♡</span><small>our first memory</small></div>
+          <figcaption>A moment worth keeping.</figcaption>
+        </figure>
+        <figure class="photo-placeholder reveal delay-1">
+          <div class="placeholder-inner"><span>♡</span><small>one of my favorites</small></div>
+          <figcaption>One picture. A thousand feelings.</figcaption>
+        </figure>
+        <figure class="photo-placeholder reveal delay-2">
+          <div class="placeholder-inner"><span>♡</span><small>and many more</small></div>
+          <figcaption>The story is still being written.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="ending">
+      <div class="ending-inner reveal">
+        <p class="eyebrow">one last thing</p>
+        <h2>Whatever comes next,<br><span>I want you in it.</span></h2>
+        <div class="big-heart">♡</div>
+        <p class="end-note">Made with love, just for you.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
