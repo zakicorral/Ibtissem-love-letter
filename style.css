@@ -47,10 +47,9 @@ main{position:relative;z-index:2}
 .line{height:1px;width:65px;background:var(--line)}
 .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .photo-placeholder{margin:0}
-.placeholder-inner{aspect-ratio:4/5;border:1px solid var(--line);background:linear-gradient(145deg,rgba(94,39,62,.42),rgba(19,10,18,.75));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden}
-.placeholder-inner:before{content:"";position:absolute;inset:12px;border:1px solid rgba(245,213,223,.1)}
-.placeholder-inner span{font-family:"Cormorant Garamond",serif;font-size:3rem;color:var(--rose)}
-.placeholder-inner small{font-size:.58rem;text-transform:uppercase;letter-spacing:.2em;color:var(--muted)}
+.placeholder-inner{aspect-ratio:4/5;border:1px solid var(--line);background:linear-gradient(145deg,rgba(94,39,62,.42),rgba(19,10,18,.75));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.placeholder-inner:before{content:"";position:absolute;inset:12px;border:1px solid rgba(245,213,223,.1);z-index:2;pointer-events:none}
+.placeholder-inner img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
 figcaption{font-family:"Cormorant Garamond",serif;color:var(--muted);font-size:1rem;margin-top:10px;text-align:center}
 .ending{min-height:85svh;display:grid;place-items:center;text-align:center;padding:100px 24px;background:radial-gradient(circle at 50% 55%,rgba(130,43,77,.18),transparent 50%)}
 .ending-inner{max-width:800px}
